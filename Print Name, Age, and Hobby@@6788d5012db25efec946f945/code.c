@@ -3,8 +3,8 @@ int main(){
     char name[5];
     int age;
     char hobby[8];
-    scanf("%s",&name);
-    scanf("%d",&age);
+    scanf("%s",name);
+    scanf("%d",age);
     scanf("%s",&hobby);
     printf("Name: %s\n",name);
     printf("Age: %d\n",age);
