@@ -11,5 +11,5 @@ int main(){
     else{
         printf("%d",n3);
     }
-    reeturn 0;
+    return 0;
 }
