@@ -2,8 +2,8 @@
 int main(){
     int i,space,rows,k=0;
     scanf("%d",&rows);
-    for(int i=1;i<=rows-i;++i){
-        for(int space=1;space<=rows;++space){
+    for(i=1;i<=rows;++i){
+        for(space=1;space<=rows-i;++space){
             printf(" ");
         }
         while(k!=2*i-1){
