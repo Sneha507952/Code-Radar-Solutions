@@ -1,16 +1,17 @@
 #include <stdio.h>
 int main(){
-    int n;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        for(int j=0;j<2*(n-i-1);j++){
-            printf(" ");
+    int i,space,rows,k=0;
+    scanf("%d",&rows);
+    for(int i=1;i<=rows-i;++i){
+        for(int space=1;space<=rows;++space){
+            printf(" ")
         }
-        for (int k=0;k<(2*i+1);k++){
+        while(k!=2*i-1){
             printf("* ");
+            ++k;
         }
-    printf("\n");
-}
+        printf("\n");
+    }
 
 return 0;
 }
