@@ -8,8 +8,9 @@ int main(){
         }
         for (int k=0;k<2*i;k++){
             printf("* ");
+        printf("\n");
         }
-        printf("\n")
+        
 
     }
     return 0;
