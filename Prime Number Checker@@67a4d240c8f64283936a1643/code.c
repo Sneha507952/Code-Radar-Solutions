@@ -12,7 +12,7 @@ int isPrime(){
 
     }
 }
-int main(){
-    isPrime();
-    return 0;
-}
+// int main(){
+//     isPrime();
+//     return 0;
+// }
