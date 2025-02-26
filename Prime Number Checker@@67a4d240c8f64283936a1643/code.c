@@ -4,16 +4,15 @@ int is_prime(){
     scanf("%d",&n);
     for(int i=2;i<n;i++){
         if (n%i!=0){
-            return 1;
+            printf("1");
         }
         else{
-            return 0;
+            printf("0");
         }
 
     }
 }
 int main(){
-    int result;
-    result=is_prime();
-    printf(result);
+    is_prime();
+    return 0;
 }
