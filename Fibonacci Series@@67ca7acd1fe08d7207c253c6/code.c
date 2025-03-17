@@ -5,7 +5,7 @@ void fibonacciSeries(int n){
     for(int i=1;i<=n;i++){
         if(i>2){
             int curr=prev_term+next_term;
-            next_term=prevterm;
+            next_term=prev_term;
             prev_term=curr;
             printf("%d ",curr);
         }
