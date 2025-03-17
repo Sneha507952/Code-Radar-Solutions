@@ -1,15 +1,4 @@
-#include <stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    if(n<=0){
-        printf("Invalid Input\n");
-        return 0;
 
-    }
-void fibonacciSeries(n);
-
-}
 void fibonacciSeries(n){
     int prev_term=1;
     int next_term=0;
