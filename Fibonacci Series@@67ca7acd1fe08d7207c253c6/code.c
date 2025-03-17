@@ -1,5 +1,5 @@
 
-void fibonacciSeries(n){
+void fibonacciSeries(int n){
     int prev_term=1;
     int next_term=0;
     for(int i=1;i<=n;i++){
