@@ -1,4 +1,4 @@
-// #include <stdio.h>
+
 int isPrime(){
     int n;
     scanf("%d",&n);
@@ -12,7 +12,3 @@ int isPrime(){
 
     }
 }
-// int main(){
-//     isPrime();
-//     return 0;
-// }
