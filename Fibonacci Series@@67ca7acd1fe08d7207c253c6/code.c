@@ -7,10 +7,10 @@ int main(){
         return 0;
 
     }
-void fibonacci(n);
+void fibonacciSeries(n);
 
 }
-void fibonacci(n){
+void fibonacciSeries(n){
     int prev_term=1;
     int next_term=0;
     for(int i=1;i<=n;i++){
