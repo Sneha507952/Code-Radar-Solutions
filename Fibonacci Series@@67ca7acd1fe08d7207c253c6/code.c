@@ -7,13 +7,13 @@ void fibonacciSeries(int n){
             int curr=prev_term+next_term;
             prev_term=next_term;
             next_term=curr;
-            printf("%d",curr);
+            printf("%d ",curr);
         }
         else if(i==1){
-            printf("%d",next_term);
+            printf("%d ",next_term);
         }
         else{
-            printf("%d",prev_term);
+            printf("%d ",prev_term);
         }
     }
 
