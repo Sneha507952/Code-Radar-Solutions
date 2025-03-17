@@ -7,7 +7,7 @@ int main(){
         return 0;
 
     }
-    fibonacci(n);
+void fibonacci(n);
 
 }
 void fibonacci(n){
