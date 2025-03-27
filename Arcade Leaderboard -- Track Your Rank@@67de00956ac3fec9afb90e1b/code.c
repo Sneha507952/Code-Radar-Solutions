@@ -18,7 +18,7 @@ void trackPlayersRanks(int ranked[], int n, int players[], int m) {
     int j = distinct_count - 1; // Pointer for distinct_scores (start from the lowest score)
     for (int i = 0; i < m; i++) {
         // Move through the leaderboard to find the correct rank
-        while (j >= 0 && scores[i] >= players[j]) {
+        while (j >= 0 && players[i] >= players[j]) {
             j--;  // Move left when your score is higher or equal to a leaderboard score
         }
         // Rank is based on the index of the last score lower than your score
