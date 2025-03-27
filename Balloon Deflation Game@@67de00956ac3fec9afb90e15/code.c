@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 void deflateBalloons(int balloons[], int n) {
     // Keep playing until all balloons are flat (air = 0)
