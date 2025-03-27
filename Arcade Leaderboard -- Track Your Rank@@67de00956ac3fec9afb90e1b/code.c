@@ -10,7 +10,7 @@ void trackPlayersRanks(int ranked[], int n, int players[], int m) {
     // Remove duplicates from the leaderboard and store the distinct scores
     for (int i = 0; i < n; i++) {
         if (distinct_count == 0 || ranked[i] != distinct_scores[distinct_count - 1]) {
-            distinct_scores[distinct_count++] = leaderboard[i];
+            distinct_scores[distinct_count++] = ranked[i];
         }
     }
 
