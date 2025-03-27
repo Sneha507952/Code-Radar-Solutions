@@ -33,13 +33,3 @@ void deflateBalloons(int balloons[], int n) {
     }
 }
 
-// int main() {
-//     // Example input
-//     int balloons[] = {10, 5, 8, 3, 7};
-//     int n = sizeof(balloons) / sizeof(balloons[0]);
-
-//     // Run the balloon deflation game
-//     balloonDeflationGame(balloons, n);
-
-//     return 0;
-// }
