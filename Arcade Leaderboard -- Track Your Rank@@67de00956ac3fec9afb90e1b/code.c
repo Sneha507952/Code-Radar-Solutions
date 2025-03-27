@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 // Function to find the rank of each score
-void trackPlayersRanks(int leaderboard[], int leaderboard_size, int scores[], int scores_size) {
+void trackPlayersRanks(int ranked[], int n, int players[], int m) {
     // Create an array to store the distinct scores in descending order
-    int *distinct_scores = (int *)malloc(leaderboard_size * sizeof(int));
+    int *distinct_scores = (int *)malloc(n * sizeof(int));
     int distinct_count = 0;
 
     // Remove duplicates from the leaderboard and store the distinct scores
-    for (int i = 0; i < leaderboard_size; i++) {
-        if (distinct_count == 0 || leaderboard[i] != distinct_scores[distinct_count - 1]) {
+    for (int i = 0; i < n; i++) {
+        if (distinct_count == 0 || ranked[i] != distinct_scores[distinct_count - 1]) {
             distinct_scores[distinct_count++] = leaderboard[i];
         }
     }
