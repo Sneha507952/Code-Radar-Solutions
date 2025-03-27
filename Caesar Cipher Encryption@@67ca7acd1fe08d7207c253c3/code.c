@@ -8,7 +8,7 @@
 // }#include <stdio.h>
 #include <ctype.h>
 
-void caesarCipher(char *message, int shift) {
+void caesarCipher(char *message, int shift,encrypted) {
     for (int i = 0; message[i] != '\0'; i++) {
         // If the character is lowercase
         if (islower(message[i])) {
