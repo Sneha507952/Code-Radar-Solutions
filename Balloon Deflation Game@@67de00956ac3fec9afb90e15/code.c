@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void balloonDeflationGame(int balloons[], int n) {
+void deflateBalloons(int balloons[], int n) {
     // Keep playing until all balloons are flat (air = 0)
     while (1) {
         int minAir = 1000; // Set an arbitrarily large value for min air.
