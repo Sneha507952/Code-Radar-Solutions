@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // Function to find the rank of each score
-void trackPlayersRanks(int ranked[], int n, int players[], int m) {
+void trackPlayerRanks(int ranked[], int n, int players[], int m) {
     // Create an array to store the distinct scores in descending order
     int *distinct_scores = (int *)malloc(n * sizeof(int));
     int distinct_count = 0;
