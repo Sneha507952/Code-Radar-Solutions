@@ -1,19 +1,45 @@
-def balloon_deflation_game(balloons):
-    # Keep playing until all balloons are flat
-    while any(balloon > 0 for balloon in balloons):
-        # Find the smallest non-zero amount of air
-        min_air = min(balloon for balloon in balloons if balloon > 0)
-        
-        # Count how many balloons have air before deflation
-        count_non_flat = sum(1 for balloon in balloons if balloon > 0)
-        
-        # Print the count of balloons with air in this round
-        print(count_non_flat)
-        
-        # Subtract the minimum amount of air from all balloons with air
-        for i in range(len(balloons)):
-            if balloons[i] > 0:
-                balloons[i] -= min_air
+#include <stdio.h>
 
+void balloonDeflationGame(int balloons[], int n) {
+    // Keep playing until all balloons are flat (air = 0)
+    while (1) {
+        int minAir = 1000; // Set an arbitrarily large value for min air.
+        int countNonFlat = 0;
 
-balloon_deflation_game(balloons)
+        // Find the smallest non-zero amount of air
+        for (int i = 0; i < n; i++) {
+            if (balloons[i] > 0) {
+                countNonFlat++;
+                if (balloons[i] < minAir) {
+                    minAir = balloons[i];
+                }
+            }
+        }
+
+        // If no balloons have air left, exit the loop
+        if (countNonFlat == 0) {
+            break;
+        }
+
+        // Print how many balloons still have air at the start of this round
+        printf("%d\n", countNonFlat);
+
+        // Subtract the minimum air amount from all balloons with air
+        for (int i = 0; i < n; i++) {
+            if (balloons[i] > 0) {
+                balloons[i] -= minAir;
+            }
+        }
+    }
+}
+
+// int main() {
+//     // Example input
+//     int balloons[] = {10, 5, 8, 3, 7};
+//     int n = sizeof(balloons) / sizeof(balloons[0]);
+
+//     // Run the balloon deflation game
+//     balloonDeflationGame(balloons, n);
+
+//     return 0;
+// }
