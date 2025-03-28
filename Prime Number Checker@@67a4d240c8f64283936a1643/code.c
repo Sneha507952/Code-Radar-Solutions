@@ -1,14 +1,9 @@
-
-int isPrime(){
-    int n;
-    scanf("%d",&n);
-    for(int i=2;i<n;i++){
-        if (n%i!=0){
-            printf("1");
+int isPrime(num){
+    for(int i=2;i<num;i++){
+        if(num%i!=0){
+            return 1;
         }
-        else{
-            printf("0");
-        }
-
     }
+    return 0;
+    
 }
