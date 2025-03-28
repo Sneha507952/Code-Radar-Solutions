@@ -8,11 +8,11 @@ int bubbleSort(char arr[],int n ){
             arr[i+1]=temp;
             swapped=1;
         }
-
-    }
     if(swapped==0){
         break;
     }
+    }
+    
 }
 void printArray(char arr[],int n){
     for(int i=0;i<n;i++){
