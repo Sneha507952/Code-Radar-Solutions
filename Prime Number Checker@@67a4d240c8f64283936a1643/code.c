@@ -18,4 +18,3 @@ int isPrime(int num){
     
     
     
-}
