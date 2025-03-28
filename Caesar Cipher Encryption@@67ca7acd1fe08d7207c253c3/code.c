@@ -1,36 +1,25 @@
-// void ceaserCipher(message,shift,encrrypted){
-//     int size=sizeof(message);
-//     for(int i=0;i<size;i++){
-//         message[i]=message[i]+(char)3;
 
-//     }
-//     printf("")
-// }#include <stdio.h>
-#include <ctype.h>
 
-void caesarCipher(char *message, int shift, char *encrypted) {
-    for (int i = 0; message[i] != '\0'; i++) {
-        // If the character is lowercase
-        if (islower(message[i])) {
-            message[i] = ((message[i] - 'a' + shift) % 26 + 26) % 26 + 'a';  // Wrap around within 'a' to 'z'
+#include <stdio.h>
+#include <ctype.h>  
+
+void caesarCipher(char message[], int shift) {
+    int i = 0;
+    
+    /
+    while (message[i] != '\0') {
+        char c = message[i];
+        
+        
+        if (isupper(c)) {
+            message[i] = ((c - 'A' + shift) % 26 + 26) % 26 + 'A';
         }
-        // If the character is uppercase
-        else if (isupper(message[i])) {
-            message[i] = ((message[i] - 'A' + shift) % 26 + 26) % 26 + 'A';  // Wrap around within 'A' to 'Z'
+        
+        else if (islower(c)) {
+            message[i] = ((c - 'a' + shift) % 26 + 26) % 26 + 'a';
         }
-        // Non-alphabet characters remain unchanged
+        
+        i++;
     }
-    printf("%s\n", message);
 }
 
-// int main() {
-//     char message[] = "Hello, World!";  // Input message
-//     int shift = 3;  // Shift value for Caesar Cipher
-
-//     printf("Original message: %s\n", message);
-
-//     // Encrypt the message using Caesar Cipher
-//     caesarCipherEncrypt(message, shift);
-
-//     return 0;
-// }
