@@ -10,7 +10,9 @@ int bubbleSort(char arr[],int n ){
         }
 
     }
-    if(swapped==0) break;
+    if(swapped==0){
+        break;
+    }
 }
 void printArray(char arr[],int n){
     for(int i=0;i<n;i++){
