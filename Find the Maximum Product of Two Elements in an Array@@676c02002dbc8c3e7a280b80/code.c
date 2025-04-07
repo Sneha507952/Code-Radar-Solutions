@@ -8,7 +8,7 @@ int main(){
    } 
    int product=arr[0]*arr[1];
    for(int i=2;i<n;i++){
-      if((arr[i]*arr[i-1]) > product){
+      if((arr[i]*arr[i-1] && (arr[i]*arr[i+1])) > product){
         product= arr[i]*arr[i+1];
       }
    }
