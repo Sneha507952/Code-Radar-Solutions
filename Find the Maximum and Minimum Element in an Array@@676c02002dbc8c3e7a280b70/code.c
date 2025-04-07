@@ -7,10 +7,17 @@ int main(){
     }
     int max=arr[0],min=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]>max){
+        
+        if(arr[i]>0 && arr[i]>max){
             max=arr[i];
         }
-        if(arr[i]<min){
+        if(arr[i]<0 && arr<max){
+            max=arr[i];
+        }
+        if(arr[i]>0 && arr[i]<min){
+            min=arr[i];
+        }
+        if(arr[i]<0 && arr>min){
             min=arr[i];
         }
     }
