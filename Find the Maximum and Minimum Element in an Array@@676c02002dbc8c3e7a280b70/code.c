@@ -11,13 +11,13 @@ int main(){
         if(arr[i]>0 && arr[i]>max){
             max=arr[i];
         }
-        if(arr[i]<0 && arr<max){
+        if(arr[i]<0 && arr[i]<max){
             max=arr[i];
         }
         if(arr[i]>0 && arr[i]<min){
             min=arr[i];
         }
-        if(arr[i]<0 && arr>min){
+        if(arr[i]<0 && arr[i]>min){
             min=arr[i];
         }
     }
