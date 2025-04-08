@@ -35,6 +35,6 @@ int main() {
             return 1;
     }
 
-    printf("Result: %d\n", result);
+    printf("%d", result);
     return 0;
 }
