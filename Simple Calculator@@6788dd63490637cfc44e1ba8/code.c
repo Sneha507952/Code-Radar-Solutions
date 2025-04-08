@@ -26,12 +26,12 @@ int main() {
             if (num2 != 0) {
                 result = num1 / num2;
             } else {
-                printf("Error: Division by zero is not allowed.\n");
+                printf("error");
                 return 1;
             }
             break;
         default:
-            printf("Error: Invalid operator.\n");
+            printf("error");
             return 1;
     }
 
