@@ -1,8 +1,17 @@
 #include <stdio.h>
-int main(){
-    int a,b;
-    scanf("%d %d",&a,&b);
-    int result=(a<<b)&1;
-    printf("%d",result);
+
+int getNthBit(int num, int n) {
+    return (num >> n) & 1;
+}
+
+int main() {
+    int number, bitPosition;
+    
+    scanf("%d", &number);
+   
+    scanf("%d", &bitPosition);
+
+    printf("%d",getNthBit(number, bitPosition));
+
     return 0;
 }
