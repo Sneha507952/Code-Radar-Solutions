@@ -1,22 +1,20 @@
 
 #include <stdio.h>
 
-void printAlternatingTriangle(int N) {
-    for (int i = 1; i <= N; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", j % 2);  
+int main() {
+    int n, i, j;
+
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            if ((i + j) % 2 == 0) {
+                printf("1");
+            } else {
+                printf("0");
+            }
         }
         printf("\n");
     }
-}
-
-int main() {
-    int N;
-    
-    scanf("%d", &N);
-    
-    printAlternatingTriangle(N);
-    
     return 0;
 }
-
