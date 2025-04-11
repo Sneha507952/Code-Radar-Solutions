@@ -40,11 +40,3 @@ void findSmallestWindow(int arr[], int N) {
     printf("%d", right - left + 1);
 }
 
-int main() {
-    int arr[] = {1, 2, 5, 3, 4, 7, 6, 8};
-    int N = sizeof(arr) / sizeof(arr[0]);
-
-    findSmallestWindow(arr, N);
-
-    return 0;
-}
